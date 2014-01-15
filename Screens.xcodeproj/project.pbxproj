@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88BE202B4A9BE645B0527129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE2547FA0A9CBDA44E18A4 /* Foundation.framework */; };
+		88BE207027BA531C9703D22B /* ViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2B29C1261031E0894A0A /* ViewSpec.m */; };
+		88BE225E63A8BF46C7933646 /* CheckboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE27E7AFDD856465146CBA /* CheckboxView.m */; };
+		88BE23DEE588CE22AB47B02D /* ImageViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE241C63C29B8A5D1F067D /* ImageViewSpec.m */; };
+		88BE2495BBE31A156F6C3014 /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE23C398FCFAD328156081 /* ScrollView.m */; };
+		88BE24E76A992F069286F93D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE2635C3A41780613724E2 /* XCTest.framework */; };
+		88BE259DE0E87BB216A7F9CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE276EA7DF3C9519033992 /* UIKit.framework */; };
+		88BE262DD102862725494231 /* ScreensTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2263FFE55902D080CC05 /* ScreensTests.m */; };
+		88BE26503425F84D3DAD95EA /* SpecUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2610D0B4F90892F9FCF6 /* SpecUtils.m */; };
+		88BE26C99D5CFE9EE42EB2B9 /* MarginSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE26A368011DFE57A12755 /* MarginSpec.m */; };
+		88BE26D322E6785735736ED3 /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE27F9009D6A48EFDF4EB6 /* TextView.m */; };
+		88BE271CA0CE857BD5551BA6 /* libScreens.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE2FF12B212134C4BD1D98 /* libScreens.a */; };
+		88BE27FE2164A3B199870AE3 /* SpecContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2CCC4455EB319A0F0147 /* SpecContext.m */; };
+		88BE28E5DFCEAD9B81F7761F /* ButtonViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2ECFE6D2879E4EEA94CC /* ButtonViewSpec.m */; };
+		88BE29BECC6EB4A220B1CED0 /* LinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2185B5D427BDB2D403F0 /* LinearLayout.m */; };
+		88BE29CBF06C76A3DA74356B /* FormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE205112E578C0C6122249 /* FormView.m */; };
+		88BE29E559C075FAF9579F61 /* ContentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2C6A9FEAD4103A10DA07 /* ContentSpec.m */; };
+		88BE2A6E064E17FDADCAFBAA /* TextFieldViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE23EC31BCA3CAD0720DE7 /* TextFieldViewSpec.m */; };
+		88BE2A7CC296B493EA95F052 /* ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE24F6841521F4BBDE56BA /* ViewUtils.m */; };
+		88BE2ABA6B4195FAD6606941 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE2547FA0A9CBDA44E18A4 /* Foundation.framework */; };
+		88BE2B07400D33397D87946D /* TextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2C891D2E75329E8099C9 /* TextFieldView.m */; };
+		88BE2B8766243AAD7065212B /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2FE0C62B0C1CEB2ADC37 /* View.m */; };
+		88BE2C106C8964FD40B11168 /* ScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE21268784A6983594D176 /* ScreenManager.m */; };
+		88BE2C13F11A18873B52721E /* ScreenSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2761DE58F8FD8833B15D /* ScreenSpec.m */; };
+		88BE2C6CF383FAD8BBAF2C17 /* SizeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE249A284B5BD7E7FA6B42 /* SizeSpec.m */; };
+		88BE2C9CF2072336E1D7B321 /* UrlContentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE245E616B7E9AC36BA0E2 /* UrlContentSpec.m */; };
+		88BE2C9ED058B7C20E190F4E /* PointSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE204F9F6917FF3ABED937 /* PointSpec.m */; };
+		88BE2D0DD1B1186CEA2FAB68 /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE277D536CC0BA66A344B8 /* ImageView.m */; };
+		88BE2DA36896DF9FDFE85B55 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2BEE20CCA5992FC8AEBB /* ButtonView.m */; };
+		88BE2DB29B7AD57E9046DDBB /* ColorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE26349F51AB085EC86FFB /* ColorSpec.m */; };
+		88BE2E159694138AE9096DAB /* TextViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE205CFF896642A9C9BCC0 /* TextViewSpec.m */; };
+		88BE2E2124E98CB7050A3A57 /* ScreenSpecsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE26150112C040A6FECBFE /* ScreenSpecsParser.m */; };
+		88BE2E24023C6062B01300DA /* BundleContentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE264BB93F571A63E71D11 /* BundleContentSpec.m */; };
+		88BE2E637EEE21D7D51FEE82 /* CheckboxViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE25AA2E5BC34E9333FC7F /* CheckboxViewSpec.m */; };
+		88BE2E7C2EA1DE324CE2F0F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88BE2016D7487991D221587E /* InfoPlist.strings */; };
+		88BE2EC855F0AAC5250F9ACF /* FormViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE26E8F14742F0BFC735DA /* FormViewSpec.m */; };
+		88BE2EDB18386B741241BDE1 /* Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE23A5C772939A14A34964 /* Layout.m */; };
+		88BE2F1E4C5DCD1C2A63A348 /* FrameSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE26EA4712A8504804876E /* FrameSpec.m */; };
+		88BE2F3FB850937243E4A0A1 /* AlignmentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE237F0C1E7CA77ECA4621 /* AlignmentSpec.m */; };
+		88BE2F6809D670F8A77EFC1C /* ScrollViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE230F51C29F98794D12DB /* ScrollViewSpec.m */; };
+		88BE2FFF00A709394C97425F /* GradientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2EAE9328F248ACC838BE /* GradientSpec.m */; };
+		B67003B21886F0F500A7CD40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BE276EA7DF3C9519033992 /* UIKit.framework */; };
+		B67003B51886F1C600A7CD40 /* ScreenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE22BD2701960843FDAF2C /* ScreenManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003B61886F21F00A7CD40 /* SizeSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE29FB5E2668545CC5AE22 /* SizeSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003B71886F22300A7CD40 /* ViewSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE27D7998519B7FF27F44A /* ViewSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003B81886F22A00A7CD40 /* ColorSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE299E1F6BA1DA7611DBDC /* ColorSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003B91886F22D00A7CD40 /* FrameSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE28A49E13F5E3119BDB40 /* FrameSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003BA1886F22F00A7CD40 /* PointSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE218F25E7738F6DD5D84B /* PointSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003BC1886F23A00A7CD40 /* MarginSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE23EC368F0ACE0EAD0FAB /* MarginSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003BD1886F23C00A7CD40 /* ScreenSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2697FEDB68B904AFEAC9 /* ScreenSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003BE1886F24400A7CD40 /* ContentSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2F25CB87E180A9C5D716 /* ContentSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003BF1886F24900A7CD40 /* FormViewSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2968B577B16EDFCF3CBF /* FormViewSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C01886F25800A7CD40 /* GradientSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE20548C08CFC7F0A2DBC1 /* GradientSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C11886F25A00A7CD40 /* TextViewSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2D76F90C545B7E72A823 /* TextViewSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C21886F25F00A7CD40 /* AlignmentSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE27AD00604F7F264CEC38 /* AlignmentSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C31886F26200A7CD40 /* ImageViewSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2D9F10A1579DD3948669 /* ImageViewSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C41886F26400A7CD40 /* ButtonViewSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE20D347EE8AB73270FEA7 /* ButtonViewSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C51886F26700A7CD40 /* ScrollViewSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2C667B7F2863C2ACD8D5 /* ScrollViewSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C61886F26800A7CD40 /* UrlContentSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE285F195F2544A281C16A /* UrlContentSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C71886F26A00A7CD40 /* CheckboxViewSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE25BF4011AAAE3C03C3CE /* CheckboxViewSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C81886F26D00A7CD40 /* BundleContentSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE21FBE4CC552F56F88688 /* BundleContentSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003C91886F27400A7CD40 /* TextFieldViewSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2E2AB0EEBB068D02F2CC /* TextFieldViewSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003CA1886F27E00A7CD40 /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2DF966BB85F382489B84 /* View.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003CB1886F27F00A7CD40 /* FormView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2961BF7601F97BC99FA1 /* FormView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003CC1886F28100A7CD40 /* TextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2468E2D1A268889FB198 /* TextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003CD1886F28300A7CD40 /* ImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2ADDEC10896128DA24D6 /* ImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003CE1886F28600A7CD40 /* ButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE23D6B1DC5F344C769E37 /* ButtonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003CF1886F28800A7CD40 /* ScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2EB5DA6488ACDC96776A /* ScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003D01886F28900A7CD40 /* CheckboxView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2C59E511D71AF4F939BD /* CheckboxView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003D11886F29300A7CD40 /* TextFieldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE2791039BA88B668A9120 /* TextFieldView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B67003D21886F39600A7CD40 /* SpecContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BE28FCAD510D2DADE7D00C /* SpecContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88BE2F2BBD170A63B72A55AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88BE2F6BC6B0064FC8D19A86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88BE2D483F4BE3AECD71D174;
+			remoteInfo = Screens;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88BE21DDA7CA0EB0F9707A11 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		88BE204F9F6917FF3ABED937 /* PointSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointSpec.m; sourceTree = "<group>"; };
+		88BE205112E578C0C6122249 /* FormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormView.m; sourceTree = "<group>"; };
+		88BE20548C08CFC7F0A2DBC1 /* GradientSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientSpec.h; sourceTree = "<group>"; };
+		88BE205CFF896642A9C9BCC0 /* TextViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewSpec.m; sourceTree = "<group>"; };
+		88BE20D347EE8AB73270FEA7 /* ButtonViewSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewSpec.h; sourceTree = "<group>"; };
+		88BE20D64AA54E3127BC5C61 /* ScreensTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ScreensTests-Info.plist"; sourceTree = "<group>"; };
+		88BE21268784A6983594D176 /* ScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenManager.m; sourceTree = "<group>"; };
+		88BE2161F9B220E490D397F3 /* LinearLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearLayout.h; sourceTree = "<group>"; };
+		88BE2185B5D427BDB2D403F0 /* LinearLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearLayout.m; sourceTree = "<group>"; };
+		88BE218F25E7738F6DD5D84B /* PointSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointSpec.h; sourceTree = "<group>"; };
+		88BE21FBE4CC552F56F88688 /* BundleContentSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleContentSpec.h; sourceTree = "<group>"; };
+		88BE2263FFE55902D080CC05 /* ScreensTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreensTests.m; sourceTree = "<group>"; };
+		88BE22B15C1B260E19DEA6F5 /* ScreenSpecsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSpecsParser.h; sourceTree = "<group>"; };
+		88BE22BD2701960843FDAF2C /* ScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenManager.h; sourceTree = "<group>"; };
+		88BE230F51C29F98794D12DB /* ScrollViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewSpec.m; sourceTree = "<group>"; };
+		88BE237F0C1E7CA77ECA4621 /* AlignmentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlignmentSpec.m; sourceTree = "<group>"; };
+		88BE23A5C772939A14A34964 /* Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout.m; sourceTree = "<group>"; };
+		88BE23A9C403B1AD1032599C /* SpecUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecUtils.h; sourceTree = "<group>"; };
+		88BE23C398FCFAD328156081 /* ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
+		88BE23D6B1DC5F344C769E37 /* ButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
+		88BE23EC31BCA3CAD0720DE7 /* TextFieldViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewSpec.m; sourceTree = "<group>"; };
+		88BE23EC368F0ACE0EAD0FAB /* MarginSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarginSpec.h; sourceTree = "<group>"; };
+		88BE241C63C29B8A5D1F067D /* ImageViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewSpec.m; sourceTree = "<group>"; };
+		88BE245E616B7E9AC36BA0E2 /* UrlContentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlContentSpec.m; sourceTree = "<group>"; };
+		88BE2468E2D1A268889FB198 /* TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		88BE249A284B5BD7E7FA6B42 /* SizeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeSpec.m; sourceTree = "<group>"; };
+		88BE24F6841521F4BBDE56BA /* ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtils.m; sourceTree = "<group>"; };
+		88BE2547FA0A9CBDA44E18A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		88BE25AA2E5BC34E9333FC7F /* CheckboxViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckboxViewSpec.m; sourceTree = "<group>"; };
+		88BE25BF4011AAAE3C03C3CE /* CheckboxViewSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckboxViewSpec.h; sourceTree = "<group>"; };
+		88BE2610D0B4F90892F9FCF6 /* SpecUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecUtils.m; sourceTree = "<group>"; };
+		88BE26150112C040A6FECBFE /* ScreenSpecsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSpecsParser.m; sourceTree = "<group>"; };
+		88BE26349F51AB085EC86FFB /* ColorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSpec.m; sourceTree = "<group>"; };
+		88BE2635C3A41780613724E2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		88BE264BB93F571A63E71D11 /* BundleContentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleContentSpec.m; sourceTree = "<group>"; };
+		88BE2697FEDB68B904AFEAC9 /* ScreenSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSpec.h; sourceTree = "<group>"; };
+		88BE26A368011DFE57A12755 /* MarginSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarginSpec.m; sourceTree = "<group>"; };
+		88BE26E8F14742F0BFC735DA /* FormViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewSpec.m; sourceTree = "<group>"; };
+		88BE26EA4712A8504804876E /* FrameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameSpec.m; sourceTree = "<group>"; };
+		88BE2761DE58F8FD8833B15D /* ScreenSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenSpec.m; sourceTree = "<group>"; };
+		88BE276EA7DF3C9519033992 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		88BE276EE1B32CB6B7264E9E /* Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout.h; sourceTree = "<group>"; };
+		88BE277D536CC0BA66A344B8 /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
+		88BE2791039BA88B668A9120 /* TextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldView.h; sourceTree = "<group>"; };
+		88BE27AD00604F7F264CEC38 /* AlignmentSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlignmentSpec.h; sourceTree = "<group>"; };
+		88BE27D7998519B7FF27F44A /* ViewSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewSpec.h; sourceTree = "<group>"; };
+		88BE27E7AFDD856465146CBA /* CheckboxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckboxView.m; sourceTree = "<group>"; };
+		88BE27F9009D6A48EFDF4EB6 /* TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
+		88BE285F195F2544A281C16A /* UrlContentSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlContentSpec.h; sourceTree = "<group>"; };
+		88BE2895CAEADB99F115BB14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88BE28A49E13F5E3119BDB40 /* FrameSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameSpec.h; sourceTree = "<group>"; };
+		88BE28FCAD510D2DADE7D00C /* SpecContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecContext.h; sourceTree = "<group>"; };
+		88BE2961BF7601F97BC99FA1 /* FormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormView.h; sourceTree = "<group>"; };
+		88BE2968B577B16EDFCF3CBF /* FormViewSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormViewSpec.h; sourceTree = "<group>"; };
+		88BE299E1F6BA1DA7611DBDC /* ColorSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSpec.h; sourceTree = "<group>"; };
+		88BE29FB5E2668545CC5AE22 /* SizeSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeSpec.h; sourceTree = "<group>"; };
+		88BE2ADDEC10896128DA24D6 /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		88BE2B29C1261031E0894A0A /* ViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSpec.m; sourceTree = "<group>"; };
+		88BE2BEE20CCA5992FC8AEBB /* ButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
+		88BE2C2D34BE212E3B4E0734 /* ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtils.h; sourceTree = "<group>"; };
+		88BE2C59E511D71AF4F939BD /* CheckboxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckboxView.h; sourceTree = "<group>"; };
+		88BE2C667B7F2863C2ACD8D5 /* ScrollViewSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewSpec.h; sourceTree = "<group>"; };
+		88BE2C6A9FEAD4103A10DA07 /* ContentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentSpec.m; sourceTree = "<group>"; };
+		88BE2C891D2E75329E8099C9 /* TextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldView.m; sourceTree = "<group>"; };
+		88BE2CCC4455EB319A0F0147 /* SpecContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecContext.m; sourceTree = "<group>"; };
+		88BE2D76F90C545B7E72A823 /* TextViewSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewSpec.h; sourceTree = "<group>"; };
+		88BE2D9F10A1579DD3948669 /* ImageViewSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewSpec.h; sourceTree = "<group>"; };
+		88BE2DBD345B4D7D7071984C /* ScreensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88BE2DF966BB85F382489B84 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		88BE2E2AB0EEBB068D02F2CC /* TextFieldViewSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldViewSpec.h; sourceTree = "<group>"; };
+		88BE2E6FB4B2A82EDECEE27A /* Screens-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Screens-Prefix.pch"; sourceTree = "<group>"; };
+		88BE2EAE9328F248ACC838BE /* GradientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientSpec.m; sourceTree = "<group>"; };
+		88BE2EB5DA6488ACDC96776A /* ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollView.h; sourceTree = "<group>"; };
+		88BE2ECFE6D2879E4EEA94CC /* ButtonViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewSpec.m; sourceTree = "<group>"; };
+		88BE2F25CB87E180A9C5D716 /* ContentSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentSpec.h; sourceTree = "<group>"; };
+		88BE2FE0C62B0C1CEB2ADC37 /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		88BE2FF12B212134C4BD1D98 /* libScreens.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libScreens.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88BE25F84EFD60E6A857F83D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BE24E76A992F069286F93D /* XCTest.framework in Frameworks */,
+				88BE2ABA6B4195FAD6606941 /* Foundation.framework in Frameworks */,
+				88BE259DE0E87BB216A7F9CD /* UIKit.framework in Frameworks */,
+				88BE271CA0CE857BD5551BA6 /* libScreens.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BE2A685909D99E7D5C1FFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67003B21886F0F500A7CD40 /* UIKit.framework in Frameworks */,
+				88BE202B4A9BE645B0527129 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88BE2118A0F8618BC95E0DF4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				88BE2C36E314AB8B77D4E8A0 /* Supporting Files */,
+				88BE25C3076780B4FDD2811A /* layouts */,
+				88BE22BD2701960843FDAF2C /* ScreenManager.h */,
+				88BE21268784A6983594D176 /* ScreenManager.m */,
+				88BE234D17FC1E117A2BDFF6 /* specs */,
+				88BE216049152D16CE310391 /* views */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		88BE216049152D16CE310391 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				88BE2DF966BB85F382489B84 /* View.h */,
+				88BE2FE0C62B0C1CEB2ADC37 /* View.m */,
+				88BE2961BF7601F97BC99FA1 /* FormView.h */,
+				88BE205112E578C0C6122249 /* FormView.m */,
+				88BE2468E2D1A268889FB198 /* TextView.h */,
+				88BE27F9009D6A48EFDF4EB6 /* TextView.m */,
+				88BE2ADDEC10896128DA24D6 /* ImageView.h */,
+				88BE277D536CC0BA66A344B8 /* ImageView.m */,
+				88BE2C2D34BE212E3B4E0734 /* ViewUtils.h */,
+				88BE24F6841521F4BBDE56BA /* ViewUtils.m */,
+				88BE23D6B1DC5F344C769E37 /* ButtonView.h */,
+				88BE2BEE20CCA5992FC8AEBB /* ButtonView.m */,
+				88BE2EB5DA6488ACDC96776A /* ScrollView.h */,
+				88BE23C398FCFAD328156081 /* ScrollView.m */,
+				88BE2C59E511D71AF4F939BD /* CheckboxView.h */,
+				88BE27E7AFDD856465146CBA /* CheckboxView.m */,
+				88BE2791039BA88B668A9120 /* TextFieldView.h */,
+				88BE2C891D2E75329E8099C9 /* TextFieldView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		88BE21B928A30A0B82C42955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88BE2547FA0A9CBDA44E18A4 /* Foundation.framework */,
+				88BE2635C3A41780613724E2 /* XCTest.framework */,
+				88BE276EA7DF3C9519033992 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88BE226CD0EE7B4B203C6ABC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88BE20D64AA54E3127BC5C61 /* ScreensTests-Info.plist */,
+				88BE2016D7487991D221587E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88BE234D17FC1E117A2BDFF6 /* specs */ = {
+			isa = PBXGroup;
+			children = (
+				88BE29FB5E2668545CC5AE22 /* SizeSpec.h */,
+				88BE249A284B5BD7E7FA6B42 /* SizeSpec.m */,
+				88BE27D7998519B7FF27F44A /* ViewSpec.h */,
+				88BE2B29C1261031E0894A0A /* ViewSpec.m */,
+				88BE299E1F6BA1DA7611DBDC /* ColorSpec.h */,
+				88BE26349F51AB085EC86FFB /* ColorSpec.m */,
+				88BE28A49E13F5E3119BDB40 /* FrameSpec.h */,
+				88BE26EA4712A8504804876E /* FrameSpec.m */,
+				88BE218F25E7738F6DD5D84B /* PointSpec.h */,
+				88BE204F9F6917FF3ABED937 /* PointSpec.m */,
+				88BE23A9C403B1AD1032599C /* SpecUtils.h */,
+				88BE2610D0B4F90892F9FCF6 /* SpecUtils.m */,
+				88BE23EC368F0ACE0EAD0FAB /* MarginSpec.h */,
+				88BE26A368011DFE57A12755 /* MarginSpec.m */,
+				88BE2697FEDB68B904AFEAC9 /* ScreenSpec.h */,
+				88BE2761DE58F8FD8833B15D /* ScreenSpec.m */,
+				88BE2F25CB87E180A9C5D716 /* ContentSpec.h */,
+				88BE2C6A9FEAD4103A10DA07 /* ContentSpec.m */,
+				88BE28FCAD510D2DADE7D00C /* SpecContext.h */,
+				88BE2CCC4455EB319A0F0147 /* SpecContext.m */,
+				88BE2968B577B16EDFCF3CBF /* FormViewSpec.h */,
+				88BE26E8F14742F0BFC735DA /* FormViewSpec.m */,
+				88BE20548C08CFC7F0A2DBC1 /* GradientSpec.h */,
+				88BE2EAE9328F248ACC838BE /* GradientSpec.m */,
+				88BE2D76F90C545B7E72A823 /* TextViewSpec.h */,
+				88BE205CFF896642A9C9BCC0 /* TextViewSpec.m */,
+				88BE27AD00604F7F264CEC38 /* AlignmentSpec.h */,
+				88BE237F0C1E7CA77ECA4621 /* AlignmentSpec.m */,
+				88BE2D9F10A1579DD3948669 /* ImageViewSpec.h */,
+				88BE241C63C29B8A5D1F067D /* ImageViewSpec.m */,
+				88BE20D347EE8AB73270FEA7 /* ButtonViewSpec.h */,
+				88BE2ECFE6D2879E4EEA94CC /* ButtonViewSpec.m */,
+				88BE2C667B7F2863C2ACD8D5 /* ScrollViewSpec.h */,
+				88BE230F51C29F98794D12DB /* ScrollViewSpec.m */,
+				88BE285F195F2544A281C16A /* UrlContentSpec.h */,
+				88BE245E616B7E9AC36BA0E2 /* UrlContentSpec.m */,
+				88BE25BF4011AAAE3C03C3CE /* CheckboxViewSpec.h */,
+				88BE25AA2E5BC34E9333FC7F /* CheckboxViewSpec.m */,
+				88BE21FBE4CC552F56F88688 /* BundleContentSpec.h */,
+				88BE264BB93F571A63E71D11 /* BundleContentSpec.m */,
+				88BE22B15C1B260E19DEA6F5 /* ScreenSpecsParser.h */,
+				88BE26150112C040A6FECBFE /* ScreenSpecsParser.m */,
+				88BE2E2AB0EEBB068D02F2CC /* TextFieldViewSpec.h */,
+				88BE23EC31BCA3CAD0720DE7 /* TextFieldViewSpec.m */,
+			);
+			path = specs;
+			sourceTree = "<group>";
+		};
+		88BE24593DF86CD139773EF3 = {
+			isa = PBXGroup;
+			children = (
+				88BE2E9DA830ADDC7A1AC6C8 /* Products */,
+				88BE21B928A30A0B82C42955 /* Frameworks */,
+				88BE2118A0F8618BC95E0DF4 /* Screens */,
+				88BE2BD6F4480517C48747BD /* ScreensTests */,
+			);
+			sourceTree = "<group>";
+		};
+		88BE25C3076780B4FDD2811A /* layouts */ = {
+			isa = PBXGroup;
+			children = (
+				88BE276EE1B32CB6B7264E9E /* Layout.h */,
+				88BE23A5C772939A14A34964 /* Layout.m */,
+				88BE2161F9B220E490D397F3 /* LinearLayout.h */,
+				88BE2185B5D427BDB2D403F0 /* LinearLayout.m */,
+			);
+			path = layouts;
+			sourceTree = "<group>";
+		};
+		88BE2BD6F4480517C48747BD /* ScreensTests */ = {
+			isa = PBXGroup;
+			children = (
+				88BE226CD0EE7B4B203C6ABC /* Supporting Files */,
+				88BE2263FFE55902D080CC05 /* ScreensTests.m */,
+			);
+			path = ScreensTests;
+			sourceTree = "<group>";
+		};
+		88BE2C36E314AB8B77D4E8A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88BE2E6FB4B2A82EDECEE27A /* Screens-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88BE2E9DA830ADDC7A1AC6C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88BE2FF12B212134C4BD1D98 /* libScreens.a */,
+				88BE2DBD345B4D7D7071984C /* ScreensTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B67003B41886F1A400A7CD40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67003B51886F1C600A7CD40 /* ScreenManager.h in Headers */,
+				B67003B91886F22D00A7CD40 /* FrameSpec.h in Headers */,
+				B67003BA1886F22F00A7CD40 /* PointSpec.h in Headers */,
+				B67003B81886F22A00A7CD40 /* ColorSpec.h in Headers */,
+				B67003CB1886F27F00A7CD40 /* FormView.h in Headers */,
+				B67003CA1886F27E00A7CD40 /* View.h in Headers */,
+				B67003CD1886F28300A7CD40 /* ImageView.h in Headers */,
+				B67003CC1886F28100A7CD40 /* TextView.h in Headers */,
+				B67003BD1886F23C00A7CD40 /* ScreenSpec.h in Headers */,
+				B67003D21886F39600A7CD40 /* SpecContext.h in Headers */,
+				B67003CF1886F28800A7CD40 /* ScrollView.h in Headers */,
+				B67003BC1886F23A00A7CD40 /* MarginSpec.h in Headers */,
+				B67003D11886F29300A7CD40 /* TextFieldView.h in Headers */,
+				B67003D01886F28900A7CD40 /* CheckboxView.h in Headers */,
+				B67003BE1886F24400A7CD40 /* ContentSpec.h in Headers */,
+				B67003CE1886F28600A7CD40 /* ButtonView.h in Headers */,
+				B67003C31886F26200A7CD40 /* ImageViewSpec.h in Headers */,
+				B67003C01886F25800A7CD40 /* GradientSpec.h in Headers */,
+				B67003C11886F25A00A7CD40 /* TextViewSpec.h in Headers */,
+				B67003C91886F27400A7CD40 /* TextFieldViewSpec.h in Headers */,
+				B67003C41886F26400A7CD40 /* ButtonViewSpec.h in Headers */,
+				B67003C81886F26D00A7CD40 /* BundleContentSpec.h in Headers */,
+				B67003C51886F26700A7CD40 /* ScrollViewSpec.h in Headers */,
+				B67003C61886F26800A7CD40 /* UrlContentSpec.h in Headers */,
+				B67003BF1886F24900A7CD40 /* FormViewSpec.h in Headers */,
+				B67003C71886F26A00A7CD40 /* CheckboxViewSpec.h in Headers */,
+				B67003C21886F25F00A7CD40 /* AlignmentSpec.h in Headers */,
+				B67003B61886F21F00A7CD40 /* SizeSpec.h in Headers */,
+				B67003B71886F22300A7CD40 /* ViewSpec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		88BE2D483F4BE3AECD71D174 /* Screens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BE241995C9AFB802A3945C /* Build configuration list for PBXNativeTarget "Screens" */;
+			buildPhases = (
+				88BE202BBAF45DF343C08B3F /* Sources */,
+				88BE2A685909D99E7D5C1FFD /* Frameworks */,
+				88BE21DDA7CA0EB0F9707A11 /* CopyFiles */,
+				B67003B31886F12600A7CD40 /* Run Script */,
+				B67003B41886F1A400A7CD40 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Screens;
+			productName = Screens;
+			productReference = 88BE2FF12B212134C4BD1D98 /* libScreens.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		88BE2EDA980D53547A71A4AC /* ScreensTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88BE26EF111F3AA69BD1941C /* Build configuration list for PBXNativeTarget "ScreensTests" */;
+			buildPhases = (
+				88BE2891AE53595944F25B1F /* Sources */,
+				88BE25F84EFD60E6A857F83D /* Frameworks */,
+				88BE2DC999DAA97D77EBD4DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88BE2DD287B7094394F0CE0C /* PBXTargetDependency */,
+			);
+			name = ScreensTests;
+			productName = ScreensTests;
+			productReference = 88BE2DBD345B4D7D7071984C /* ScreensTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88BE2F6BC6B0064FC8D19A86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = DevMode;
+			};
+			buildConfigurationList = 88BE2AB0FB518EB6B3D90A98 /* Build configuration list for PBXProject "Screens" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 88BE24593DF86CD139773EF3;
+			productRefGroup = 88BE2E9DA830ADDC7A1AC6C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88BE2D483F4BE3AECD71D174 /* Screens */,
+				88BE2EDA980D53547A71A4AC /* ScreensTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88BE2DC999DAA97D77EBD4DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BE2E7C2EA1DE324CE2F0F1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B67003B31886F12600A7CD40 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-universal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi\n\nopen \"${CREATING_UNIVERSAL_DIR}\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88BE202BBAF45DF343C08B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BE2EDB18386B741241BDE1 /* Layout.m in Sources */,
+				88BE29BECC6EB4A220B1CED0 /* LinearLayout.m in Sources */,
+				88BE2C106C8964FD40B11168 /* ScreenManager.m in Sources */,
+				88BE2C6CF383FAD8BBAF2C17 /* SizeSpec.m in Sources */,
+				88BE207027BA531C9703D22B /* ViewSpec.m in Sources */,
+				88BE2DB29B7AD57E9046DDBB /* ColorSpec.m in Sources */,
+				88BE2F1E4C5DCD1C2A63A348 /* FrameSpec.m in Sources */,
+				88BE2C9ED058B7C20E190F4E /* PointSpec.m in Sources */,
+				88BE26503425F84D3DAD95EA /* SpecUtils.m in Sources */,
+				88BE26C99D5CFE9EE42EB2B9 /* MarginSpec.m in Sources */,
+				88BE2C13F11A18873B52721E /* ScreenSpec.m in Sources */,
+				88BE29E559C075FAF9579F61 /* ContentSpec.m in Sources */,
+				88BE27FE2164A3B199870AE3 /* SpecContext.m in Sources */,
+				88BE2EC855F0AAC5250F9ACF /* FormViewSpec.m in Sources */,
+				88BE2FFF00A709394C97425F /* GradientSpec.m in Sources */,
+				88BE2E159694138AE9096DAB /* TextViewSpec.m in Sources */,
+				88BE2F3FB850937243E4A0A1 /* AlignmentSpec.m in Sources */,
+				88BE23DEE588CE22AB47B02D /* ImageViewSpec.m in Sources */,
+				88BE28E5DFCEAD9B81F7761F /* ButtonViewSpec.m in Sources */,
+				88BE2F6809D670F8A77EFC1C /* ScrollViewSpec.m in Sources */,
+				88BE2C9CF2072336E1D7B321 /* UrlContentSpec.m in Sources */,
+				88BE2E637EEE21D7D51FEE82 /* CheckboxViewSpec.m in Sources */,
+				88BE2E24023C6062B01300DA /* BundleContentSpec.m in Sources */,
+				88BE2E2124E98CB7050A3A57 /* ScreenSpecsParser.m in Sources */,
+				88BE2A6E064E17FDADCAFBAA /* TextFieldViewSpec.m in Sources */,
+				88BE2B8766243AAD7065212B /* View.m in Sources */,
+				88BE29CBF06C76A3DA74356B /* FormView.m in Sources */,
+				88BE26D322E6785735736ED3 /* TextView.m in Sources */,
+				88BE2D0DD1B1186CEA2FAB68 /* ImageView.m in Sources */,
+				88BE2A7CC296B493EA95F052 /* ViewUtils.m in Sources */,
+				88BE2DA36896DF9FDFE85B55 /* ButtonView.m in Sources */,
+				88BE2495BBE31A156F6C3014 /* ScrollView.m in Sources */,
+				88BE225E63A8BF46C7933646 /* CheckboxView.m in Sources */,
+				88BE2B07400D33397D87946D /* TextFieldView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88BE2891AE53595944F25B1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BE262DD102862725494231 /* ScreensTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88BE2DD287B7094394F0CE0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88BE2D483F4BE3AECD71D174 /* Screens */;
+			targetProxy = 88BE2F2BBD170A63B72A55AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88BE2016D7487991D221587E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88BE2895CAEADB99F115BB14 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88BE20620D29AB31D6A38958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Screens.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screens/Screens-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		88BE241BE84E22B72EFF0F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Screens.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screens/Screens-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		88BE2736CA4B4953B8820DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screens/Screens-Prefix.pch";
+				INFOPLIST_FILE = "ScreensTests/ScreensTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		88BE277E9205644C34AEFACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88BE2A364D735429935BB568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screens/Screens-Prefix.pch";
+				INFOPLIST_FILE = "ScreensTests/ScreensTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		88BE2B6A9E022E76E74AB127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88BE241995C9AFB802A3945C /* Build configuration list for PBXNativeTarget "Screens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BE20620D29AB31D6A38958 /* Release */,
+				88BE241BE84E22B72EFF0F7C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BE26EF111F3AA69BD1941C /* Build configuration list for PBXNativeTarget "ScreensTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BE2736CA4B4953B8820DB5 /* Release */,
+				88BE2A364D735429935BB568 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88BE2AB0FB518EB6B3D90A98 /* Build configuration list for PBXProject "Screens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88BE2B6A9E022E76E74AB127 /* Release */,
+				88BE277E9205644C34AEFACC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88BE2F6BC6B0064FC8D19A86 /* Project object */;
+}
